@@ -1,0 +1,95 @@
+:root {
+  color-scheme: dark;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f8fafc;
+  background: #030712;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(244, 114, 182, 0.2), transparent 30%),
+    linear-gradient(135deg, #020617 0%, #111827 42%, #1f2937 100%);
+  color: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-shell.light-theme {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #111827;
+}
+
+.app-shell.light-theme .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+.app-shell.light-theme .navbar .brand,
+.app-shell.light-theme .navbar a,
+.app-shell.light-theme .theme-toggle {
+  color: #111827;
+}
+
+.app-shell.light-theme .hero-content p,
+.app-shell.light-theme .about-card p,
+.app-shell.light-theme .contact-card p,
+.app-shell.light-theme .project-card p,
+.app-shell.light-theme .skill-card {
+  color: #334155;
+}
+
+.app-shell.light-theme .about-card,
+.app-shell.light-theme .contact-card,
+.app-shell.light-theme .project-card,
+.app-shell.light-theme .skill-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+.app-shell.light-theme .btn-secondary,
+.app-shell.light-theme .theme-toggle {
+  background: rgba(15, 23, 42, 0.08);
+}
